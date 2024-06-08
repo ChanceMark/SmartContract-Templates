@@ -1,11 +1,4 @@
 
-####  SmartContract-Templates
-
-**Repository Name:** SmartContract-Templates
-
-**README.md:**
-
-```markdown
 # SmartContract-Templates
 
 A collection of reusable smart contract templates for various use cases.
@@ -24,11 +17,12 @@ A collection of reusable smart contract templates for various use cases.
    git clone https://github.com/your-username/SmartContract-Templates.git
    cd SmartContract-Templates
 2. Install dependencies:
-
-npm install
+   ```bash
+   npm install
 
 3. Compile the contracts:
-npx hardhat compile
+   ```bash
+   npx hardhat compile
 
 ## Usage
 Customize the smart contracts as needed.
