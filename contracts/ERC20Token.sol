@@ -7,4 +7,8 @@ contract ERC20Token is ERC20 {
     constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
         _mint(msg.sender, initialSupply);
     }
+
+    function burn(uint256 amount) external {
+        _burn(msg.sender, amount);
+    }
 }
