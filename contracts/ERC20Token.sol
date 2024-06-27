@@ -11,4 +11,9 @@ contract ERC20Token is ERC20 {
     function burn(uint256 amount) external {
         _burn(msg.sender, amount);
     }
+
+    function buy() external payable {
+        require(msg.value > 0, "You must send some ether");
+        _mint(msg.sender, msg.value * 10 ** decimals() /price);
+    }
 }
