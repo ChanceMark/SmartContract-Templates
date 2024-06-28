@@ -11,6 +11,11 @@ contract ERC721Token is ERC721Full {
     constructor() ERC721Full("GameItem", "ITM") public {
     }
 
+    function mint() external {
+        _safeMint(msg.sender, nextTokenId);
+        nextTokenId++;
+    }
+
     function awardItem(address player, string memory tokenURI) public returns (uint256) {
         _tokenIds.increment();
 
